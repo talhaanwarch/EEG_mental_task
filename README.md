@@ -33,12 +33,22 @@ Highest accuracy after 6 fold cross validation is 72% obtained by LDA classifers
 ![](ml-result/cross_val.png) 
 
 # Approach 2. 
-In this approach we have not done any sort of normalization after loading the data
-Epochs are created from data, see 2- feature extraction epochs.py
-Pipe line (Epoch pipeline SVM.py) is created to choose optimum principle components and hyper parameters of SVM. 
-This also perform 5 fold cross validation
-We obtained accuracy of `80+-0.09` 
-![](ml-result/approach_2_result.png)
+
+* [File 1](https://github.com/talhaanwarch/EEG_mental_task/blob/master/Feature_Selection_Approach_2.ipynb)
+⋅⋅1. No filtering
+⋅⋅2. No model tuning
+⋅⋅3. Max accuracy is 79.4%
+
+* [File 2](https://github.com/talhaanwarch/EEG_mental_task/blob/master/Feature_select_app_2_butterworth_tuned.ipynb)
+Buttworth filter is applied (0.1-45Hz).  
+Model is tuned once before feature selection.  
+Max accuracy is 79% using PCA
+
+* [File 3](https://github.com/talhaanwarch/EEG_mental_task/blob/master/Feature_select_app_2_butterworth_30_tuned.ipynb)
+Buttworth filter is applied (0.1-45Hz).  
+Model is tuned once before feature selection.  
+Max accuracy is 81.7% without feature selection
+
 
 
 ## Special Thanks  
