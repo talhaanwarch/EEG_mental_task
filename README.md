@@ -45,7 +45,7 @@ Model is tuned once before feature selection.
 Max accuracy is 79% using PCA
 
 * [File 3](https://github.com/talhaanwarch/EEG_mental_task/blob/master/Feature_select_app_2_butterworth_30_tuned.ipynb)
-Buttworth filter is applied (0.1-45Hz).  
+Buttworth filter is applied (0.1-30Hz).  
 Model is tuned once before feature selection.  
 Max accuracy is 81.7% without feature selection
 
